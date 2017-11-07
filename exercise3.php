@@ -37,7 +37,7 @@ class CategoryTree
             }
         }
 
-        return NULL;
+        return $category;
     }
 
     /**
@@ -63,16 +63,6 @@ class CategoryTree
     {
         $parentCategory->addChild($category);
         $this->categories[] = $category;
-    }
-
-    /**
-     * TO BE DELETED
-     */
-    public function displayCategories()
-    {
-        echo '<pre>';
-        var_dump($this->categories);
-        die();
     }
 
     /**
